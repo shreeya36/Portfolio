@@ -69,6 +69,9 @@ header .logo{
   text-decoration: none;
   transition: .2s all;
 }
+.navbar ul li a:hover{
+  color:#ff0157;
+}
 
 .navbar ul li a{
   color:#3d1144;
@@ -78,9 +81,7 @@ header .logo{
 }
 
 #menu-bar{
-  border-radius: .5rem;
   font-size: 3rem;
-  padding:.5rem 1.2rem;
   cursor: pointer;
   display: none;
 }
@@ -108,23 +109,31 @@ header .logo{
   font-family: 'Baloo Bhai 2', cursive;
 }
 
-.home .content p{
+.home .content h2{
   padding:1rem;
   font-size:3rem;
+  font-family:'Poppins', sans-serif;
 }
 
 .btn{
   display:inline-block;
   padding:1rem 2rem;
-  border:1px solid #ff0157;
+  border:3px solid #ff0157;
+  border-radius: 1rem;
+  color:#fff;
   background:#ff0157;
-  border-radius: 3rem;
   color:#fff;
   font-size:2rem;
-  /* letter-spacing: 2px; */
+  font-family: 'Poppins', sans-serif;
 }
 .btn:hover{
   letter-spacing: 2px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.btn:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(4px);
 }
 
 .home .imgBx{
@@ -148,7 +157,7 @@ header .logo{
 }
 
 .gallery h2 span{
-  color:#ff0157
+  color:#ff0157;
 }
 
 .gallery .gallery-item{
@@ -204,6 +213,10 @@ header .logo{
 
 .gallery .gallery-item .item .info p{
   font-size:1.5rem;
+  color:#3d1144;
+  padding:1rem;
+  border-top: 2px double #3d1144;
+  border-bottom: 2px double #3d1144;
 }
 
 .gallery .gallery-item .item:hover .info{
@@ -332,10 +345,12 @@ header .logo{
 .contact .container .box-container .content .text h3{
   font-size:2rem;
   color:#3d1144;
+  
 }
 
 .contact .container .box-container .content .text p{
   font-size: 1.5rem;
+  text-transform: none;
 }
 
 .contact .container .box-container .row{
@@ -346,6 +361,21 @@ header .logo{
   width:100%;
   text-align: center;
 }
+.contact .container .box-container #text{
+   font-size:2.5rem;
+   color:#3d1144;
+   margin-bottom:1.5rem;
+   text-align:center;
+}
+.contact .container .box-container .row #error_msg{
+  font-size:1.5rem;
+  color:#fff;
+  background:#ff0157;
+  width:78%;
+  opacity:1;
+  transition: opacity 2s ease;
+}
+
 
 .contact .container .box-container .row .col{
   width:100%;
@@ -381,7 +411,8 @@ header .logo{
 }
 
 .contact .container .box-container .row .col .sub-btn:hover{
-  background:#d82661;
+  /* background:#d82661; */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* footer page */
@@ -430,7 +461,8 @@ footer{
    }
 
    .navbar ul li a:hover{
-     border-left:2px solid #fff;
+     border-left:2px solid #3d1144;
+     color: #3d1144;
    }
 
    .navbar ul li a{
@@ -468,6 +500,16 @@ footer{
    .contact .container .box-container .row{
     text-align: center;
    }
+   .contact .container .box-container .row .col .name{
+     width:80%;
+     margin:1rem;
+     margin-bottom:1.5rem;
+   }
+   .contact .container .box-container .row .col .email{
+    width:80%;
+    margin:1rem;
+  }
+   
 }
 
 @media (max-width:550px){
